@@ -6,3 +6,14 @@ package-lock.json
 yarn.lock
 .DS_Store
 *.log
+build/
+dist/
+out/
+.turbo/
+.vercel/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
