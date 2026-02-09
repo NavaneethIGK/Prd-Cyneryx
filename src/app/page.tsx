@@ -89,6 +89,7 @@ export default function Home() {
         badge={services.badge}
         title={services.title}
         description={services.description}
+        services={services.serviceList}
         buttonText={services.buttonText}
         buttonLink={services.buttonLink}
       />

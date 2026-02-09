@@ -53,7 +53,37 @@
   "services": {
     "badge": "Our Services",
     "title": "Our Excellent AI Solutions for Your Business",
-    "description": "Cyneryx is a next-generation technology company specialising in AI-driven automation, robotics integration, and digital transformation for supply chain, logistics, warehousing, and industrial environments.\n\nWe help organisations design, build, integrate, and scale intelligent systems by combining Artificial Intelligence, robotics, and enterprise software into practical, real-world solutions. Our focus is on making advanced technology accessible, scalable, and cost-effective for businesses of all sizes.\n\nWhat We Do\n\nAt Cyneryx, we operate at the intersection of AI, robotics, and enterprise systems:\n\nAI Solutions & Automation\n\nAI orchestration engines\n\nComputer vision & AI vision gateways\n\nPredictive maintenance and operational intelligence\n\nData-driven decision support systems\n\nRobotics & Warehouse Automation\n\nIntegration of AMRs, ACRs, and robotic systems\n\nVendor-agnostic robotics middleware\n\nRobotics-to-WMS/ERP connectivity\n\nAutonomous and semi-autonomous system design\n\nSupply Chain & Enterprise Technology\n\nWMS, TMS, ERP integrations\n\nCustom middleware and integration platforms\n\nProcess optimisation and system modernisation\n\nCloud-native and scalable architectures\n\nConsulting & Product Innovation\n\nSolution architecture & technical strategy\n\nMVP and SaaS product development\n\nAI-first product design\n\nDigital transformation advisory\n\nOur Approach\n\nWe are vendor-agnostic, outcome-driven, and deeply hands-on. Unlike traditional consultancies, Cyneryx blends engineering, AI, and business insight to deliver solutions that actually work on the ground—not just on paper.\n\nOur mission is simple:\n\nMake intelligent automation and AI practical, affordable, and impactful.\n\nWho We Work With\n\nWe support startups, SMEs, and large enterprises, partnering closely with clients to modernise operations, unlock efficiency, and future-proof their technology landscape.",
+    "description": "Cyneryx is a next-generation technology company specialising in AI-driven automation, robotics integration, and digital transformation for supply chain, logistics, warehousing, and industrial environments.",
+    "serviceList": [
+      {
+        "id": 1,
+        "icon": "robot",
+        "title": "Robotic Automation",
+        "description": "The Integration of AMRs, ACRs, and robotic systems. Vendor-agnostic robotics middleware with robotics-to-WMS/ERP connectivity for autonomous and semi-autonomous system design.",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "icon": "brain",
+        "title": "Machine Learning",
+        "description": "AI orchestration engines and computer vision & AI vision gateways. Data-driven decision support systems for predictive maintenance and operational intelligence.",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "icon": "graduation",
+        "title": "Education & Science",
+        "description": "Solution architecture and technical strategy. MVP and SaaS product development with AI-first product design and digital transformation advisory.",
+        "link": "#"
+      },
+      {
+        "id": 4,
+        "icon": "analytics",
+        "title": "Predictive Analysis",
+        "description": "Advanced analytics and predictive maintenance. Operational intelligence systems that help organizations optimize operations and make data-driven decisions.",
+        "link": "#"
+      }
+    ],
     "buttonText": "Read More",
     "buttonLink": "#"
   },

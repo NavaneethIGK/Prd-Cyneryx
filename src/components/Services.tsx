@@ -3,11 +3,13 @@
 import ServiceCard from './ServiceCard';
 
 interface Service {
+  id?: number;
   icon: string;
   title: string;
   description: string;
   linkText?: string;
   linkHref?: string;
+  link?: string;
 }
 
 interface ServicesProps {
@@ -33,34 +35,34 @@ export default function Services({
     {
       icon: 'robot',
       title: 'Robotic Automation',
-      description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.',
-      linkText: 'Read More',
-      linkHref: '#',
-    },
-    {
-      icon: 'power-off',
-      title: 'Machine learning',
-      description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.',
-      linkText: 'Read More',
-      linkHref: '#',
-    },
-    {
-      icon: 'graduation-cap',
-      title: 'Education & Science',
-      description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.',
+      description: 'The Integration of AMRs, ACRs, and robotic systems. Vendor-agnostic robotics middleware with robotics-to-WMS/ERP connectivity for autonomous and semi-autonomous system design.',
       linkText: 'Read More',
       linkHref: '#',
     },
     {
       icon: 'brain',
+      title: 'Machine Learning',
+      description: 'AI orchestration engines and computer vision & AI vision gateways. Data-driven decision support systems for predictive maintenance and operational intelligence.',
+      linkText: 'Read More',
+      linkHref: '#',
+    },
+    {
+      icon: 'graduation',
+      title: 'Education & Science',
+      description: 'Solution architecture and technical strategy. MVP and SaaS product development with AI-first product design and digital transformation advisory.',
+      linkText: 'Read More',
+      linkHref: '#',
+    },
+    {
+      icon: 'analytics',
       title: 'Predictive Analysis',
-      description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.',
+      description: 'Advanced analytics and predictive maintenance. Operational intelligence systems that help organizations optimize operations and make data-driven decisions.',
       linkText: 'Read More',
       linkHref: '#',
     },
   ];
 
-  const displayServices = services.length > 0 ? services : defaultServices;
+  const displayServices = services && services.length > 0 ? services : defaultServices;
 
   return (
     <section style={{ backgroundColor: '#f8f9fa', padding: '60px 0' }}>
@@ -93,17 +95,17 @@ export default function Services({
             </a>
           </div>
 
-          {/* Right Column - 2x2 Service Cards Grid */}
+          {/* Right Column - Service Cards Grid */}
           <div className="col-lg-7">
             <div className="row">
               {displayServices.map((service, index) => (
-                <div key={index} className="col-lg-6 col-md-6 mb-4">
+                <div key={service.id || index} className="col-lg-6 col-md-6 mb-4">
                   <ServiceCard
                     icon={service.icon}
                     title={service.title}
                     description={service.description}
                     linkText={service.linkText}
-                    linkHref={service.linkHref}
+                    linkHref={service.linkHref || service.link}
                     featured={index === 2}
                   />
                 </div>
