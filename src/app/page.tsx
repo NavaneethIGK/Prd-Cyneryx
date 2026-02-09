@@ -106,6 +106,7 @@ export default function Home() {
       <FAQ
         badge={faq.badge}
         title={faq.title}
+        faqs={faq.faqs}
       />
 
       <div id="team" />
@@ -123,6 +124,7 @@ export default function Home() {
         badge={testimonials.badge}
         title={testimonials.title}
         subtitle={testimonials.subtitle}
+        testimonials={testimonials.testimonials}
       />
 
       <Newsletter

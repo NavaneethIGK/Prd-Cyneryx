@@ -119,7 +119,33 @@
   },
   "faq": {
     "badge": "Popular FAQs",
-    "title": "Frequently Asked Questions"
+    "title": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "How to build a website?",
+        "answer": "Building a website involves planning your content, choosing a domain name, selecting a hosting provider, and using website builders or coding to create your site."
+      },
+      {
+        "question": "How long will it take to get a new website?",
+        "answer": "The timeline depends on the complexity of your project. Simple websites can be completed in 2-4 weeks, while more complex ones may take several months."
+      },
+      {
+        "question": "Do you only create HTML websites?",
+        "answer": "No, we create responsive websites using modern technologies including HTML5, CSS3, JavaScript, React, and other frameworks suited to your needs."
+      },
+      {
+        "question": "Will my website be mobile-friendly?",
+        "answer": "Yes, all our websites are built with mobile-first design principles and are fully responsive across all devices and screen sizes."
+      },
+      {
+        "question": "Will you maintain my site for me?",
+        "answer": "Yes, we offer comprehensive maintenance and support packages to keep your website secure, updated, and performing optimally."
+      },
+      {
+        "question": "I'm on a strict budget. Do you have any low cost options?",
+        "answer": "Absolutely! We offer flexible pricing options and can work with various budget constraints while maintaining quality standards."
+      }
+    ]
   },
   "team": {
     "badge": "Our Team",
@@ -155,13 +181,36 @@
   "testimonials": {
     "badge": "Success Stories",
     "title": "What Our Clients Say",
-    "subtitle": "Real feedback from companies we've helped transform"
+    "subtitle": "Real feedback from companies we've helped transform",
+    "testimonials": [
+      {
+        "quote": "The AI solution transformed our business operations and increased efficiency by 40%. Highly recommended!",
+        "author": "John Smith",
+        "role": "CEO, Tech Corp",
+        "image": "/images/testimonial-1.jpg",
+        "rating": "4"
+      },
+      {
+        "quote": "Outstanding service and support. The team understood our needs perfectly and delivered beyond expectations.",
+        "author": "Sarah Johnson",
+        "role": "Product Manager, Innovate Inc",
+        "image": "/images/testimonial-2.jpg",
+        "rating": 5
+      },
+      {
+        "quote": "Professional, responsive, and knowledgeable. They helped us implement AI in ways we never thought possible.",
+        "author": "Michael Chen",
+        "role": "Director, Global Solutions & Head",
+        "image": "/images/testimonial-3.jpg",
+        "rating": 5
+      }
+    ]
   },
   "newsletter": {
     "badge": "Newsletter",
     "title": "Let's subscribe the newsletter",
     "placeholderText": "Enter Your Email",
-    "descriptionText": "Diam sed sed dolor stet amet eirmod",
+    "descriptionText": "Please subscribe ",
     "image": "/images/newsletter.png"
   },
   "footer": {
