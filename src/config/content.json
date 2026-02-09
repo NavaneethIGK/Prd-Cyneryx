@@ -1,0 +1,133 @@
+{
+  "navbar": {
+    "brand": "Cyneryx",
+    "links": [
+      {
+        "label": "Home",
+        "href": "#"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Team",
+        "href": "#team"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "badge": "Welcome to Cyneryx",
+    "title": "Harness the Power of Artificial Intelligence",
+    "description": "Transform your business with cutting-edge AI solutions. We help companies leverage machine learning and automation to achieve remarkable growth.",
+    "primaryBtnText": "Get Started",
+    "secondaryBtnText": "Learn More",
+    "primaryBtnLink": "#services",
+    "secondaryBtnLink": "#about",
+    "image": "/images/hero-img.png"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "We Make Your Business Smarter with Artificial Intelligence",
+    "description": "Cyneryx is a next-generation technology company specialising in AI-driven automation, robotics integration, and digital transformation for supply chain, logistics, warehousing, and industrial environments.\n\n",
+    "description2": "We help organisations design, build, integrate, and scale intelligent systems by combining Artificial Intelligence, robotics, and enterprise software into practical, real-world solutions. Our focus is on making advanced technology accessible, scalable, and cost-effective for businesses of all sizes.",
+    "features": [
+      "Award Winning",
+      "24/7 Support",
+      "Professional Staff",
+      "Fair Prices"
+    ],
+    "image": "/images/about-img.jpg",
+    "buttonText": "Read More",
+    "buttonLink": "#",
+    "showSocial": true
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Our Excellent AI Solutions for Your Business",
+    "description": "Cyneryx is a next-generation technology company specialising in AI-driven automation, robotics integration, and digital transformation for supply chain, logistics, warehousing, and industrial environments.\n\nWe help organisations design, build, integrate, and scale intelligent systems by combining Artificial Intelligence, robotics, and enterprise software into practical, real-world solutions. Our focus is on making advanced technology accessible, scalable, and cost-effective for businesses of all sizes.\n\nWhat We Do\n\nAt Cyneryx, we operate at the intersection of AI, robotics, and enterprise systems:\n\nAI Solutions & Automation\n\nAI orchestration engines\n\nComputer vision & AI vision gateways\n\nPredictive maintenance and operational intelligence\n\nData-driven decision support systems\n\nRobotics & Warehouse Automation\n\nIntegration of AMRs, ACRs, and robotic systems\n\nVendor-agnostic robotics middleware\n\nRobotics-to-WMS/ERP connectivity\n\nAutonomous and semi-autonomous system design\n\nSupply Chain & Enterprise Technology\n\nWMS, TMS, ERP integrations\n\nCustom middleware and integration platforms\n\nProcess optimisation and system modernisation\n\nCloud-native and scalable architectures\n\nConsulting & Product Innovation\n\nSolution architecture & technical strategy\n\nMVP and SaaS product development\n\nAI-first product design\n\nDigital transformation advisory\n\nOur Approach\n\nWe are vendor-agnostic, outcome-driven, and deeply hands-on. Unlike traditional consultancies, Cyneryx blends engineering, AI, and business insight to deliver solutions that actually work on the ground—not just on paper.\n\nOur mission is simple:\n\nMake intelligent automation and AI practical, affordable, and impactful.\n\nWho We Work With\n\nWe support startups, SMEs, and large enterprises, partnering closely with clients to modernise operations, unlock efficiency, and future-proof their technology landscape.",
+    "buttonText": "Read More",
+    "buttonLink": "#"
+  },
+  "features": {
+    "badge": "Why Choose Us",
+    "title": "We're Best in AI Industry with 10 Years of Experience",
+    "description": "Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor",
+    "featureList": [
+      {
+        "icon": "check",
+        "text": "Diam dolor diam ipsum et tempor sit"
+      },
+      {
+        "icon": "check",
+        "text": "Diam dolor diam ipsum et tempor sit"
+      },
+      {
+        "icon": "check",
+        "text": "Diam dolor diam ipsum et tempor sit"
+      }
+    ],
+    "stats": [
+      {
+        "number": "10+",
+        "label": "Happy Clients"
+      },
+      {
+        "number": "30+",
+        "label": "Projects Complete"
+      }
+    ],
+    "image": "/images/feature.png"
+  },
+  "faq": {
+    "badge": "Popular FAQs",
+    "title": "Frequently Asked Questions"
+  },
+  "team": {
+    "badge": "Our Team",
+    "title": "Meet Our Experienced Team Members",
+    "description": "A founder-led team with deep enterprise experience across retail, logistics, and warehouse automation.",
+    "members": [
+      {
+        "name": "Jawwad Khan",
+        "role": "Founder & CEO",
+        "image": "/api/uploads/1767791118573-Jawwad_Cyneryx_DP.jpeg"
+      },
+      {
+        "name": "Roshanara Aamer",
+        "role": "Co-Founder & Creative Director",
+        "image": "/api/uploads/1768618143717-Screenshot_2025-05-01_124415.png"
+      }
+    ],
+    "buttonText": "Read More",
+    "buttonLink": "#"
+  },
+  "testimonials": {
+    "badge": "Success Stories",
+    "title": "What Our Clients Say",
+    "subtitle": "Real feedback from companies we've helped transform"
+  },
+  "newsletter": {
+    "badge": "Newsletter",
+    "title": "Let's subscribe the newsletter",
+    "placeholderText": "Enter Your Email",
+    "descriptionText": "Diam sed sed dolor stet amet eirmod",
+    "image": "/images/newsletter.png"
+  },
+  "footer": {
+    "brand": "Cyneryx",
+    "tagline": "Transforming businesses with artificial intelligence solutions",
+    "email": "contact@cyneryx.com",
+    "phone": "+61406492096",
+    "address": "SPARK Innovation Hub, Werribee Vic Australia 3024",
+    "copyright": "© 2025 Cyneryx. All Rights Reserved."
+  }
+}
