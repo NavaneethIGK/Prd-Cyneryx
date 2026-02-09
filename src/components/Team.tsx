@@ -2,10 +2,18 @@
 
 import TeamCard from './TeamCard';
 
+interface SocialLinks {
+  facebook?: string;
+  twitter?: string;
+  linkedin?: string;
+  instagram?: string;
+}
+
 interface TeamMember {
   name: string;
   role: string;
   image: string;
+  social?: SocialLinks;
 }
 
 interface TeamProps {
@@ -27,24 +35,26 @@ export default function Team({
 }: TeamProps) {
   const defaultMembers: TeamMember[] = [
     {
-      name: 'Boris Johnson',
+      name: 'Jawwad Khan',
       role: 'Founder & CEO',
-      image: 'https://via.placeholder.com/280x280?text=Boris',
+      image: '/api/uploads/1767791118573-Jawwad_Cyneryx_DP.jpeg',
+      social: {
+        facebook: 'https://facebook.com',
+        twitter: 'https://twitter.com',
+        linkedin: 'https://linkedin.com',
+        instagram: 'https://instagram.com',
+      },
     },
     {
-      name: 'Kate Winslet',
-      role: 'Co Founder',
-      image: 'https://via.placeholder.com/280x280?text=Kate',
-    },
-    {
-      name: 'John Smith',
-      role: 'Managing Director',
-      image: 'https://via.placeholder.com/280x280?text=John',
-    },
-    {
-      name: 'Jane Doe',
-      role: 'Lead Designer',
-      image: 'https://via.placeholder.com/280x280?text=Jane',
+      name: 'Roshanara Aamer',
+      role: 'Co-Founder & Creative Director',
+      image: '/api/uploads/1768618143717-Screenshot_2025-05-01_124415.png',
+      social: {
+        facebook: 'https://facebook.com',
+        twitter: 'https://twitter.com',
+        linkedin: 'https://linkedin.com',
+        instagram: 'https://instagram.com',
+      },
     },
   ];
 

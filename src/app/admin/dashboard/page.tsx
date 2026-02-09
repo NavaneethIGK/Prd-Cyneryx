@@ -103,7 +103,7 @@ export default function AdminDashboard() {
     if (field === 'features') return '';
     if (field === 'featureList') return { icon: '', text: '' };
     if (field === 'stats') return { number: '', label: '' };
-    if (field === 'members') return { name: '', role: '', image: '' };
+    if (field === 'members') return { name: '', role: '', image: '', social: { facebook: '', twitter: '', linkedin: '', instagram: '' } };
     return {};
   };
 
@@ -414,6 +414,56 @@ export default function AdminDashboard() {
                                       />
                                       {imageUpload.uploading && <p style={{ fontSize: '0.8rem', color: '#666' }}>Uploading...</p>}
                                       {imageUpload.error && <p style={{ fontSize: '0.8rem', color: '#c33' }}>{imageUpload.error}</p>}
+                                    </div>
+                                  ) : key === 'social' ? (
+                                    // Special handling for social links object
+                                    <div style={{ background: '#fff', padding: '10px', borderRadius: '4px', border: '1px solid #e0e0e0' }}>
+                                      {(() => {
+                                        let socialObj = val;
+                                        // Parse if it's a string
+                                        if (typeof val === 'string') {
+                                          try {
+                                            socialObj = JSON.parse(val);
+                                          } catch {
+                                            socialObj = {};
+                                          }
+                                        }
+                                        return Object.entries(socialObj || {}).map(([socialKey, socialVal]: [string, any]) => (
+                                          <div key={socialKey} style={{ marginBottom: '8px' }}>
+                                            <label style={{
+                                              display: 'block',
+                                              marginBottom: '3px',
+                                              color: '#555',
+                                              fontWeight: '500',
+                                              fontSize: '0.8rem',
+                                              textTransform: 'capitalize',
+                                            }}>
+                                              {socialKey}
+                                            </label>
+                                            <input
+                                              type="text"
+                                              value={typeof socialVal === 'string' ? socialVal : ''}
+                                              onChange={(e) => {
+                                                const updatedArray = [...(content[activeSection][field] || [])];
+                                                if (!updatedArray[index].social || typeof updatedArray[index].social === 'string') {
+                                                  updatedArray[index].social = {};
+                                                }
+                                                updatedArray[index].social[socialKey] = e.target.value;
+                                                updateField(activeSection, field, updatedArray);
+                                              }}
+                                              placeholder={`https://${socialKey}.com/username`}
+                                              style={{
+                                                width: '100%',
+                                                padding: '6px',
+                                                border: '1px solid #ddd',
+                                                borderRadius: '3px',
+                                                fontSize: '0.8rem',
+                                                boxSizing: 'border-box',
+                                              }}
+                                            />
+                                          </div>
+                                        ));
+                                      })()}
                                     </div>
                                   ) : (
                                     <input

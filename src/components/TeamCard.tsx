@@ -1,9 +1,17 @@
 'use client';
 
+interface SocialLinks {
+  facebook?: string;
+  twitter?: string;
+  linkedin?: string;
+  instagram?: string;
+}
+
 interface TeamMember {
   name: string;
   role: string;
   image: string;
+  social?: SocialLinks;
 }
 
 interface TeamCardProps {
@@ -12,6 +20,13 @@ interface TeamCardProps {
 }
 
 export default function TeamCard({ member, showSocial = true }: TeamCardProps) {
+  const socialIcons = [
+    { key: 'facebook', icon: 'facebook-f' },
+    { key: 'twitter', icon: 'twitter' },
+    { key: 'linkedin', icon: 'linkedin-in' },
+    { key: 'instagram', icon: 'instagram' },
+  ];
+
   return (
     <div style={{ textAlign: 'center' }}>
       {/* Circular Image */}
@@ -39,41 +54,43 @@ export default function TeamCard({ member, showSocial = true }: TeamCardProps) {
       </p>
 
       {/* Social Icons */}
-      {showSocial && (
+      {showSocial && member.social && (
         <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
-          {[
-            { icon: 'facebook-f', href: '#' },
-            { icon: 'twitter', href: '#' },
-            { icon: 'linkedin-in', href: '#' },
-            { icon: 'instagram', href: '#' },
-          ].map((social, index) => (
-            <a
-              key={index}
-              href={social.href}
-              style={{
-                width: '40px',
-                height: '40px',
-                borderRadius: '50%',
-                backgroundColor: '#1E88E5',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'white',
-                transition: 'all 0.3s ease',
-                textDecoration: 'none',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#1565C0';
-                e.currentTarget.style.transform = 'scale(1.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#1E88E5';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <i className={`fab fa-${social.icon}`} style={{ fontSize: '0.9rem' }}></i>
-            </a>
-          ))}
+          {socialIcons.map((social) => {
+            const url = member.social?.[social.key as keyof SocialLinks];
+            if (!url) return null;
+            
+            return (
+              <a
+                key={social.key}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '50%',
+                  backgroundColor: '#1E88E5',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'white',
+                  transition: 'all 0.3s ease',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1565C0';
+                  e.currentTarget.style.transform = 'scale(1.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#1E88E5';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                <i className={`fab fa-${social.icon}`} style={{ fontSize: '0.9rem' }}></i>
+              </a>
+            );
+          })}
         </div>
       )}
     </div>

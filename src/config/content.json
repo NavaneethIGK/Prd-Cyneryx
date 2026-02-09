@@ -59,7 +59,7 @@
         "id": 1,
         "icon": "robot",
         "title": "Robotic Automation",
-        "description": "The Integration of AMRs, ACRs, and robotic systems. Vendor-agnostic robotics middleware with robotics-to-WMS/ERP connectivity for autonomous and semi-autonomous system design.",
+        "description": "Integration of AMRs, ACRs, and robotic systems. Vendor-agnostic robotics middleware with robotics-to-WMS/ERP connectivity for autonomous and semi-autonomous system design.",
         "link": "#"
       },
       {
@@ -129,12 +129,24 @@
       {
         "name": "Jawwad Khan",
         "role": "Founder & CEO",
-        "image": "/api/uploads/1767791118573-Jawwad_Cyneryx_DP.jpeg"
+        "image": "/api/uploads/1767791118573-Jawwad_Cyneryx_DP.jpeg",
+        "social": {
+          "facebook": "https://facebook.com/jaw",
+          "twitter": "https://twitter.com",
+          "linkedin": "https://linkedin.com",
+          "instagram": "https://instagram.com"
+        }
       },
       {
         "name": "Roshanara Aamer",
         "role": "Co-Founder & Creative Director",
-        "image": "/api/uploads/1768618143717-Screenshot_2025-05-01_124415.png"
+        "image": "/api/uploads/1768618143717-Screenshot_2025-05-01_124415.png",
+        "social": {
+          "facebook": "https://facebook.com",
+          "twitter": "https://twitter.com",
+          "linkedin": "https://linkedin.com",
+          "instagram": "https://instagram.com"
+        }
       }
     ],
     "buttonText": "Read More",
